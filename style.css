@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(61, 202, 138);
+}
+nav{
+    background-color: black;
+    height: 65px;
+    color: white;
+    align-content: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap:40px;
+    font-family: "Rubik", sans-serif;
+}
+.brand img{
+    width: 45px;
+    padding: 0 10px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 650;
+}
+.bottom
+{
+    background-color: black;
+    position: sticky;
+    bottom:0;
+    height:170px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: context-menu;
+}
+.container
+{
+    min-height: 72vh;
+    background-color: black;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    width: 70%;
+    margin:23px auto;
+    display: flex;
+    padding: 20px;
+    border-radius: 12px;
+    background-image: url(bg.jpg);
+    background-size: 100%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+#myProgressBar
+{       margin-top:50px;
+        width: 80vw;
+        cursor: pointer;
+        
+}
+.icons
+{
+    color:white;
+    font-size: 3.5rem;
+    margin:20px;
+}
+.icons i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+.active
+{
+    animation: border 1.3s ease infinite;
+    animation-play-state: running;
+    border:3px solid;
+    border-color:aqua blue green;
+}
+.songitemcontainer
+{
+    margin-top: 50px;
+}
+.songitem
+{
+    display: flex;
+    width:80%;
+    height:70px;
+    border-radius: 18px;
+    font-size: 1rem;
+    color:black;
+    background-color: white;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:10px;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    flex-wrap: nowrap;
+    font-weight: 500;
+}
+@keyframes border {
+    0%
+    { border-color: aqua blue green;
+    transition-behavior: smooth;
+    }
+    10%
+    {
+      border-color: blue green aqua;
+    }
+    20%
+    {
+        border-color: green aqua blue;
+    }
+    30%
+    {
+     border-color: aqua blue green;
+    }
+    40%{
+    border-color: blue green aqua;
+    }
+    50%
+    {
+        border-color: green aqua blue;
+    }
+    60%
+    {   border-color: aqua blue green;
+        
+    }
+    70%
+    { border-color: blue green aqua;}
+
+    80%
+    {
+        border-color: green aqua blue;
+    }
+    90%
+    {   border-color: aqua blue green;
+        
+    }
+    100%
+    { border-color: blue green aqua;}
+}
+.songitem img{
+    width: 20%;
+    height: 100%;
+    border-radius: 18px;
+    margin-right: 10px;
+}
+.timestamp
+{ 
+    text-wrap:nowrap;
+    margin:0 10px;
+}
+.songitem i{
+    cursor: pointer;
+    
+}
+.songlistplay
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
